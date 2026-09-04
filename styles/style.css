@@ -35,6 +35,7 @@ hr{
 .prep-time-container{
     background-color: hsl(330, 100%, 98%);
     border-radius: 12px;
+    flex-grow: 1;
 }
 
 .prep-time-title{
