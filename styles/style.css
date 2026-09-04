@@ -8,13 +8,19 @@ body{
 
 .recipe-container{
     display: flex;
-    flex-direction: column;
     background-color: hsl(0, 0%, 100%);
     border-radius: 14px;
+    flex-wrap: wrap;
     max-width: 630px;
+    width: 100%;
     padding: 30px;
     margin: 100px 0px;
-    justify-content: center;
+}
+
+@media (max-width: 600px){
+    .recipe-container{
+    margin: 0px;
+}
 }
 
 hr{
@@ -56,6 +62,8 @@ li::marker {
 
 img{
     border-radius: 12px;
+    height: auto;
+    max-width: 100%;
 }
 
 /*Text formatting*/
