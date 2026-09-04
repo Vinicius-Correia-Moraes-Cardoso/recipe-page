@@ -1,13 +1,64 @@
 body{
     margin: 0;
-    min-height: 100dvh;
-    width: 100%;
     display: flex;
     background-color:  hsl(30, 54%, 90%);
     font-family:  "Outfit", Arial;
     justify-content: center;
-    align-items: center;
 }
+
+.recipe-container{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 14px;
+    max-width: 630px;
+    padding: 30px;
+    margin: 100px 0px;
+    justify-content: center;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: hsl(30, 18%, 87%);
+    width: 100%;  
+    margin: 8px 0px;
+}
+
+
+.prep-time-container{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 12px;
+}
+
+.prep-time-title{
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+/*List formatting*/
+
+li{
+    margin: 12px 12px 12px 0px;
+    padding-left: 15px;
+}
+.instructions-ol, .ingredients-ul{
+    padding-left: 20px;
+}
+
+li::marker {
+    font-family: "outfit", Arial;
+    font-weight: 700;
+    font-variant-numeric: lining-nums;
+    color: hsl(14, 45%, 36%);
+}
+
+img{
+    border-radius: 12px;
+}
+
+/*Text formatting*/
 
 h1, h2{
     font-family: "Young Serif", Arial;
@@ -24,59 +75,28 @@ p, li{
     color: hsl(30, 10%, 34%);
 }
 
-li::marker {
-    font-family: "outfit", Arial;
-    font-weight: 700;
-    font-variant-numeric: lining-nums;
-    color: hsl(14, 45%, 36%);
-}
-
 .font-weight-600{
     font-weight: 600;
 }
 
-hr{
-    border: none;
-    height: 1px;
-    background-color: hsl(30, 18%, 87%);
-    width: 100%;  
-    margin: 8px 0px;
-}
+/*Table*/
 
-.recipe-container{
-    display: flex;
-    flex-direction: column;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 14px;
-    max-width: 630px;
-    padding: 30px;
-    justify-content: center;
-}
-
-.prep-time-container{
-    background-color: hsl(330, 100%, 98%);
-    border-radius: 12px;
-}
-
-.ul-li{
-    margin: 9px;
+.nutrition-table{
     padding-left: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    color: hsl(30, 10%, 34%);
 }
 
-.ol-li{
-    margin: 9px 9px 9px 0px;
+.nutrition-table tr{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
-.instructions-ol{
-    padding-left: 10px;
+td{
+    padding: 15px;
 }
 
-.prep-time-title{
-    color: hsl(332, 51%, 32%);
-    font-weight: 700;
-    padding-left: 20px;
-}
-
-img{
-    border-radius: 12px;
+.nutrition-table tr:last-child{
+    border-bottom: none;
 }
