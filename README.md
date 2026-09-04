@@ -17,7 +17,7 @@ A recipe page from frontend mentor.
 
 ### Links
 
-- Solution URL: [[Add solution URL here](https://vinicius-correia-moraes-cardoso.github.io/recipe-page/)]
+- Solution URL: [https://vinicius-correia-moraes-cardoso.github.io/recipe-page/]
 
 ### Built with
 
